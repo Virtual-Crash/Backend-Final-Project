@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 let Schema = mongoose.Schema;
 
-let StudentSchema = new Schema({
+let BookSchema = new Schema({
     title: String,
     author: String,
     year: Number,
@@ -11,4 +11,4 @@ let StudentSchema = new Schema({
     price: Number
 });
 
-module.exports = mongoose.model('Student', StudentSchema);
+module.exports = mongoose.model('Book', BookSchema);
