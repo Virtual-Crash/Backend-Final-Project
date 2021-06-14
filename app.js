@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/books', booksRouter);
+app.use('./routes/books', booksRouter);
 
 app.use((request, response, next) => {
   response.header('Access-Control-Allow-Origin', '*');
